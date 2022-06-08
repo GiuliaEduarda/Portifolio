@@ -1,0 +1,574 @@
+@import "./assets/css/home.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+}
+.container{
+    width: 100%;
+    max-width: 2021px;
+    min-height: 100%;
+    margin: auto;
+}
+header{ width: 100%;
+    background-color: #4E00AA;
+    height: 100%;
+} 
+
+/** navbar **/
+
+.navbar{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    margin-right: 50px;
+    
+}
+.logo img{
+    width: 15%;
+    padding: 10px;
+   
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-size: 1.5em;
+    color: #fff;
+   padding: 20px;
+    
+}
+.list li{
+    margin-left: 30px;
+}
+#toggler, .navbar label{
+    display: none;
+}
+ /**mobile **/
+@media screen and (max-width: 600px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .logo{
+        width: 0;
+    }
+    
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+       
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+    /** giulia e imagem **/
+    .nome{
+       display: flex; 
+       flex-wrap: wrap;
+       
+    }
+    .h-name p{
+       
+       margin-top: 30px;
+     
+    }
+    
+    /**fim giulia e imagem**/
+
+    /**sobremim**/
+
+    .h-sobre{
+       
+      display: inline-flex;
+      flex-wrap: wrap;
+     align-items: center;
+      
+       
+    }
+    
+    .h-title-sobre{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .h-title-sobre h2, h3, p{
+       font-size: 1em;
+       text-align: justify;
+    }
+    .h-title-sobre h2{
+        font-size: 2.5em;
+    }
+
+    .w-100{
+        align-items: center;
+        width: 0vh;
+    }
+
+/**fim sobre mim**/
+/**certificados**/
+
+.item1{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.5em;
+    
+}
+.item1 img{
+   width: 100%;
+   margin-top: 50%; 
+}
+/** fim certificados **/
+/*habilidades */
+.habi{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+.h-title-habilidades h2{
+    font-size: 0.5em;
+   margin-left: 115%;
+   
+   
+}
+
+.h-habilidades{
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+  
+    
+}
+.item2:not(:last-child){
+    width: 20%;
+    height: 20%;
+    font-size: smaller;
+}
+.title span{
+    font-size: smaller;
+    align-items: center;
+}
+.item2::before{
+    width: 10%;
+    height: 10%;
+    
+}
+.item2{
+    padding: 5%;
+   margin: 5%;
+  align-content: center;
+  justify-content: center;
+    
+}
+
+/** fim habilidades**/
+/*contato*/
+.h-contato2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.w-1002{
+  flex-wrap: wrap; 
+}
+.w-rede2 h2, p{
+font-size: small;
+}
+}
+/** fim mobile**/
+
+/** fim navbar **/
+.nome{
+    display: inline-flex;
+    margin-top: 5%;
+    
+}
+.h-name{
+    
+    width: 50%;
+    margin-top: 7%;
+    margin-left: 5% ;
+}
+/** typing effect **/
+
+.h-p1{
+    display: inline-block;
+}
+.h-p{
+    overflow: hidden;
+    font-size: 2rem;
+    color:#9EC6FF ;
+    border-right: .15em solid #000 ;
+    white-space: nowrap;
+    margin-left: 1%;
+    width: 0;
+    animation: typing 2s  steps(20, end) forwards,
+    blink .8s infinite ;
+}
+
+@keyframes typing {
+    from{ width: 0;}
+    to{ width: 100%;}
+}
+
+@keyframes blink{
+    from{
+        border-color: transparent;
+    }
+    to{
+        border-color: #000;
+    }
+}
+
+/**fim typing effect**/
+
+
+.h-name h1{
+    font-size: 5.5rem;
+    color: #fff;
+}
+
+
+.forma img{
+   
+    width: 70%;
+    margin-left: 26%;
+}
+
+/** giulia e imagem**/
+
+/**sobre mim **/
+.h-sobre{
+    height: 90vh;
+    background-color: antiquewhite; 
+      
+   
+}
+
+.h2-sobre{
+    font-size:2em;
+}
+
+.span{
+    color: #4E00AA;
+    overflow-x: hidden;
+}
+
+
+
+.right{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    
+}
+
+.h-title-sobre{
+    font-size: 1.7em;
+    text-align: right;
+    width: 113%;
+    padding: 10% ;
+}
+
+.w-div img{
+    padding: 20% 5%;
+width: 70%;
+margin-left: 20%;
+
+
+}
+
+/**CERTIFICADOS**/
+
+.h-educacao{
+text-align: center;
+padding: 3%;
+height: 90vh;
+background-color: #4E00AA;
+
+
+}
+.h-title-educacao{
+    
+ 
+ font-size: 3em;
+ color: #fff;
+}
+.item1{
+    display: flex;
+    justify-content: center;
+    
+    padding: 5%;
+    text-align: center;
+}
+.item{
+   width: 50%;
+   height: 100%;
+   margin: auto;
+   cursor: pointer;
+  text-align: center;
+    
+}
+
+.w-100-title{
+ width: 100%;
+ 
+font-size: 1em;
+padding: 5%;
+background: rgb(255,255,255,0,5);
+flex-direction: row;
+color: #fff;
+clip-path: circle(0% at 50% 50%);
+transition: all .2s;
+}
+
+.item img{
+    
+    transition: all 2s;
+    width: 50%;
+    height: 40%;
+    
+    box-shadow: 3px 3px 10px black;
+}
+
+/** hover certificados **/
+
+.item:hover .w-100-title{
+    clip-path: circle(100% at 50% 50%);
+  
+}
+.item:hover img{
+    
+    transform: scale(1.1);
+}
+
+/**fim hover**/
+
+/** fim certificados **/
+
+/**habilidades**/
+.h-title-habilidades{
+    font-size: 3em;
+    padding: 2%;
+    display: inline;
+    text-align: center;
+    color: #000;
+    
+}
+
+.habi{
+    height: 60vh;
+    background-color: antiquewhite;
+    
+
+}
+.h-habilidades{
+    display: flex;
+    
+  justify-content: space-evenly;
+  padding: 1%;
+}
+.item2{
+    width: 170px;
+    height:170px ;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: grid;
+    position: relative;
+    place-items: center;
+    transition: all .2s;
+    cursor: pointer;
+}
+.item2:not(:last-child){
+    margin-right: 3rem;
+}
+.item2::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3), inset -5px -5px 20px rgba(0, 0, 0, 0.3);
+
+}
+.item2:nth-child(1){
+    background-image: conic-gradient(#F25C05 95%, transparent 0);
+    color: #F25C05;
+}
+.item2:nth-child(2){
+    background-image: conic-gradient(#0388A6 90%, transparent 0);
+    color: #0388A6;
+}
+.item2:nth-child(3){
+    background-image: conic-gradient(#ca2cb5 80%, transparent 0);
+    color: #ca2cb5;
+}
+.item2:nth-child(4){
+    background-image: conic-gradient(#dfd227 70%, transparent 0);
+    color: #dfd227;
+}
+.item2:nth-child(5){
+    background-image: conic-gradient(#70d3e9 60%, transparent 0);
+    color: #70d3e9;
+}
+.item2:hover{
+    transform: scale(1.1);
+}
+
+.title{
+    font-size: 15px;
+    z-index: 1;
+    text-align: center;
+    font-weight: 600;
+    
+}
+.title span{
+    display: block;
+}
+
+/** fim habilidades**/
+/**inicio contatos**/
+.h-title-contato{
+    padding: 1%;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.h-contato{
+    text-align: center;
+   
+    
+    background-color: #fff;
+}
+.h-contato2{
+    display: inline-flex;
+ width: 40%;
+ 
+    
+}
+.h-contato2 a{
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.w-1002{
+    
+    width: 100%;
+    font-size: 1rem;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: text;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #fff;
+    margin: 10px;
+    transition: 0.4s;
+    box-shadow: rgb(240, 219, 232) 3px 3px 6px 0px, rgba(255, 255, 255) -3px -3px 6px 1px;
+}
+.w-1002:hover{
+    transform: translateY(-10px);
+}
+.w-1002 h2{
+   
+    font-size: 1em;
+}
+.w-1002 p{
+    margin-left:5px ;
+}
+.w-rede img{
+    width: 50px;
+}
+
+.w-rede1{
+   display: inline-flex;
+    width: 100%;
+    
+    border-radius: 10px;
+    justify-content:center;
+   
+}
+.w-rede2{
+ width: 100%;
+ 
+    
+}
+.w-rede {
+    width: 10%;
+    font-size: 2rem;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #fff;
+    margin: 10px;
+    transition: 0.4s;
+    box-shadow: rgb(240, 219, 232) 3px 3px 6px 0px, rgba(255, 255, 255) -3px -3px 6px 1px;
+}
+.w-rede:hover{
+    transform: translateY(-10px);
+}
+
+/** fim do contato**/
+
+footer{
+    background-color: #4E00AA;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer h2{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+footer a{
+    color: #000;
+    text-decoration: none;
+    font-size: 0.7em;
+}
